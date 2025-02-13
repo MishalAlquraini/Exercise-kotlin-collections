@@ -5,6 +5,7 @@ val numSet = setOf(1, 2, 3, 3, 4, 5, 5)
 val addNumber = numSet + 6
 val countryMap = mutableMapOf("USA" to "Washington", "France" to "Paris","Germany" to "Berlin")
 val carBrands = arrayListOf("Chevy","Toyota","Tesla","Honda")
+val numbers = listOf(10, 5, 20, 15, 25, 30)
 fun main() {
 
     fruitMList.add("Grapes")
@@ -27,5 +28,11 @@ fun main() {
 
     carBrands.remove("Ford")
     println(carBrands)
+
+    val filteredNumbers = numbers.filter { it > 15 }
+    println("Numbers greater than 15: $filteredNumbers")
+
+    val sortedNumbers = numbers.sorted()
+    println("Sorted list: $sortedNumbers")
 
 }
